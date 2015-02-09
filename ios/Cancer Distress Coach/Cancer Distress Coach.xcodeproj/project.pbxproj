@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A1551AF1625E78500E8DF40 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551AD1625E78500E8DF40 /* EventKit.framework */; };
+		9A1551B01625E78500E8DF40 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551AE1625E78500E8DF40 /* EventKitUI.framework */; };
+		9A1551B21625E7A000E8DF40 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551B11625E7A000E8DF40 /* AddressBook.framework */; };
+		9A1551B41625E7B300E8DF40 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551B31625E7B300E8DF40 /* libxml2.dylib */; };
+		9A1551B61625E7C200E8DF40 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551B51625E7C200E8DF40 /* MediaPlayer.framework */; };
+		9A1551B81625E7D500E8DF40 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551B71625E7D500E8DF40 /* libc++.dylib */; };
+		9A1551BA1625E8AA00E8DF40 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1551B91625E8AA00E8DF40 /* AddressBookUI.framework */; };
+		9A2DDE51162603D000AD6A78 /* coachlib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DDE4F162603D000AD6A78 /* coachlib.xcdatamodeld */; };
+		9A2DE11E162E225E00AD6A78 /* ToggleBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2DE11D162E225D00AD6A78 /* ToggleBar.xib */; };
+		9A3003ED17F9068F00EDC73D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3003EC17F9068F00EDC73D /* CoreText.framework */; };
+		9A3003F117F9070500EDC73D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3003F017F9070500EDC73D /* ImageIO.framework */; };
+		9A3003F317F9072200EDC73D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3003F217F9072200EDC73D /* JavaScriptCore.framework */; };
+		9A3003F417F9073500EDC73D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3003EE17F906F000EDC73D /* CoreImage.framework */; };
+		9A3003F617F9084D00EDC73D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3003F517F9084D00EDC73D /* MessageUI.framework */; };
+		9A3003FC17F90EEF00EDC73D /* cc_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3003FB17F90EEF00EDC73D /* cc_icon.png */; };
+		9A3004001801E6F600EDC73D /* Cancer Distress Coach-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A3003FD1801E6F600EDC73D /* Cancer Distress Coach-Info.plist */; };
+		9A3004011801E6F600EDC73D /* Cancer Distress Coach.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 9A3003FF1801E6F600EDC73D /* Cancer Distress Coach.entitlements */; };
+		9A3004061801E78600EDC73D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3004021801E78600EDC73D /* Default-568h@2x.png */; };
+		9A3004071801E78600EDC73D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3004031801E78600EDC73D /* Default.png */; };
+		9A3004081801E78600EDC73D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3004041801E78600EDC73D /* Default@2x.png */; };
+		9A3004091801E78600EDC73D /* defaultTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A3004051801E78600EDC73D /* defaultTheme.plist */; };
+		9A3004151801E79900EDC73D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A30040E1801E79900EDC73D /* Icon.png */; };
+		9A3004161801E79900EDC73D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A30040F1801E79900EDC73D /* Icon@2x.png */; };
+		9A3004171801E79900EDC73D /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 9A3004101801E79900EDC73D /* iTunesArtwork */; };
+		9A3004191801E7A600EDC73D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3004181801E7A600EDC73D /* main.m */; };
+		9A30041B1801E7B500EDC73D /* storedata.db in Resources */ = {isa = PBXBuildFile; fileRef = 9A30041A1801E7B500EDC73D /* storedata.db */; };
+		9A30041E1801F26200EDC73D /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 9A30041D1801F26200EDC73D /* Content */; };
+		9A844A79163C5EAD00B4DFC2 /* SelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A844A78163C5EAD00B4DFC2 /* SelectionCell.xib */; };
+		9AB254EE1624E6220076342D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB254ED1624E6220076342D /* UIKit.framework */; };
+		9AB254F01624E6220076342D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB254EF1624E6220076342D /* Foundation.framework */; };
+		9AB254F21624E6220076342D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB254F11624E6220076342D /* CoreGraphics.framework */; };
+		9AB257B11625D0C40076342D /* libcoachlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257B01625D0C40076342D /* libcoachlib.a */; };
+		9AB257D21625D6970076342D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257D11625D6970076342D /* CFNetwork.framework */; };
+		9AB257D41625D6CC0076342D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257D31625D6CC0076342D /* CoreData.framework */; };
+		9AB257D61625D6F00076342D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257D51625D6F00076342D /* AVFoundation.framework */; };
+		9AB257D81625D7230076342D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257D71625D7230076342D /* SystemConfiguration.framework */; };
+		9AB257DA1625D75B0076342D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257D91625D75B0076342D /* MobileCoreServices.framework */; };
+		9AB257DC1625D7720076342D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257DB1625D7720076342D /* libz.dylib */; };
+		9AB257DE1625D79E0076342D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB257DD1625D79E0076342D /* QuartzCore.framework */; };
+		9AB258201625D9C40076342D /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F11625D9C40076342D /* ball.png */; };
+		9AB258211625D9C40076342D /* blandbar_darker.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F21625D9C40076342D /* blandbar_darker.png */; };
+		9AB258221625D9C40076342D /* blue_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F31625D9C40076342D /* blue_button.png */; };
+		9AB258231625D9C40076342D /* blue_button_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F41625D9C40076342D /* blue_button_big.png */; };
+		9AB258241625D9C40076342D /* blue_button_navy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F51625D9C40076342D /* blue_button_navy.png */; };
+		9AB258251625D9C40076342D /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F61625D9C40076342D /* checkmark.png */; };
+		9AB258261625D9C40076342D /* closed_captioning_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F71625D9C40076342D /* closed_captioning_symbol.png */; };
+		9AB258271625D9C40076342D /* delete-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F81625D9C40076342D /* delete-icon.png */; };
+		9AB258281625D9C40076342D /* gradient_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257F91625D9C40076342D /* gradient_button.png */; };
+		9AB258291625D9C40076342D /* green_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257FA1625D9C40076342D /* green_button.png */; };
+		9AB2582A1625D9C40076342D /* listen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257FB1625D9C40076342D /* listen.png */; };
+		9AB2582B1625D9C40076342D /* mercury.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257FC1625D9C40076342D /* mercury.png */; };
+		9AB2582C1625D9C40076342D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257FD1625D9C40076342D /* star.png */; };
+		9AB2582D1625D9C40076342D /* table_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257FE1625D9C40076342D /* table_bg.png */; };
+		9AB2582E1625D9C40076342D /* table_bg_darker.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB257FF1625D9C40076342D /* table_bg_darker.png */; };
+		9AB2582F1625D9C40076342D /* therm_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258001625D9C40076342D /* therm_marker.png */; };
+		9AB258301625D9C40076342D /* thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258011625D9C40076342D /* thermometer.png */; };
+		9AB258311625D9C40076342D /* thermometer_marks.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258021625D9C40076342D /* thermometer_marks.png */; };
+		9AB258321625D9C40076342D /* thumbsdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258031625D9C40076342D /* thumbsdown.png */; };
+		9AB258331625D9C40076342D /* thumbsup.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258041625D9C40076342D /* thumbsup.png */; };
+		9AB258341625D9C40076342D /* white_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258051625D9C40076342D /* white_button.png */; };
+		9AB258351625D9C40076342D /* white_button_no_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258061625D9C40076342D /* white_button_no_shadow.png */; };
+		9AB258361625D9C40076342D /* xray_man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258071625D9C40076342D /* xray_man.jpg */; };
+		9AB258371625D9C40076342D /* zoom_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB258081625D9C40076342D /* zoom_image.png */; };
+		9AB258381625D9C40076342D /* ContentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2580A1625D9C40076342D /* ContentListViewController.xib */; };
+		9AB258391625D9C40076342D /* GroupedContentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2580B1625D9C40076342D /* GroupedContentListViewController.xib */; };
+		9AB2583A1625D9C40076342D /* HistoryGraphViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2580C1625D9C40076342D /* HistoryGraphViewController.xib */; };
+		9AB2583B1625D9C40076342D /* InputAccessory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2580D1625D9C40076342D /* InputAccessory.xib */; };
+		9AB2583C1625D9C40076342D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2580E1625D9C40076342D /* MainWindow.xib */; };
+		9AB2583D1625D9C40076342D /* SUDSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2580F1625D9C40076342D /* SUDSView.xib */; };
+		9ACAD19C1625F816007FBA7A /* userdata.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 9ACAD19B1625F816007FBA7A /* userdata.xcdatamodel */; };
+		B90BB2A71916EA1000CB37D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90BB2A61916EA1000CB37D6 /* Security.framework */; };
+		B90BB2A91916ECA700CB37D6 /* cancerdistresscoach_content.xml in Resources */ = {isa = PBXBuildFile; fileRef = B90BB2A81916ECA700CB37D6 /* cancerdistresscoach_content.xml */; };
+		B9E9568D19183A2700563F35 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E9568919183A2700563F35 /* HockeySDK.framework */; };
+		B9E9568E19183A2700563F35 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B9E9568B19183A2700563F35 /* HockeySDK.xcconfig */; };
+		B9E9568F19183A2700563F35 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9E9568C19183A2700563F35 /* HockeySDKResources.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A2C7FAC18285B18009B267C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2C7FA818285B18009B267C /* coachlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AB255151624E6C60076342D;
+			remoteInfo = coachlib;
+		};
+		9A2DDE59162604A600AD6A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB254E01624E6220076342D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2DDE551626049700AD6A78;
+			remoteInfo = "PTSD Coach Content";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A1551AD1625E78500E8DF40 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		9A1551AE1625E78500E8DF40 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		9A1551B11625E7A000E8DF40 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		9A1551B31625E7B300E8DF40 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		9A1551B51625E7C200E8DF40 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9A1551B71625E7D500E8DF40 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		9A1551B91625E8AA00E8DF40 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		9A2C7FA818285B18009B267C /* coachlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = coachlib.xcodeproj; path = ../coachlib/coachlib.xcodeproj; sourceTree = "<group>"; };
+		9A2DDE50162603D000AD6A78 /* coachlib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coachlib.xcdatamodel; sourceTree = "<group>"; };
+		9A2DE11D162E225D00AD6A78 /* ToggleBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToggleBar.xib; sourceTree = "<group>"; };
+		9A3003EC17F9068F00EDC73D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9A3003EE17F906F000EDC73D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9A3003F017F9070500EDC73D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9A3003F217F9072200EDC73D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9A3003F517F9084D00EDC73D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9A3003FB17F90EEF00EDC73D /* cc_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc_icon.png; sourceTree = "<group>"; };
+		9A3003FD1801E6F600EDC73D /* Cancer Distress Coach-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Cancer Distress Coach-Info.plist"; path = "Cancer Distress Coach/Cancer Distress Coach-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9A3003FE1801E6F600EDC73D /* Cancer Distress Coach-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Cancer Distress Coach-Prefix.pch"; path = "Cancer Distress Coach/Cancer Distress Coach-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		9A3003FF1801E6F600EDC73D /* Cancer Distress Coach.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Cancer Distress Coach.entitlements"; path = "Cancer Distress Coach/Cancer Distress Coach.entitlements"; sourceTree = SOURCE_ROOT; };
+		9A3004021801E78600EDC73D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Cancer Distress Coach/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		9A3004031801E78600EDC73D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Cancer Distress Coach/Default.png"; sourceTree = SOURCE_ROOT; };
+		9A3004041801E78600EDC73D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Cancer Distress Coach/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		9A3004051801E78600EDC73D /* defaultTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultTheme.plist; path = "Cancer Distress Coach/defaultTheme.plist"; sourceTree = SOURCE_ROOT; };
+		9A30040E1801E79900EDC73D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "Cancer Distress Coach/Icon.png"; sourceTree = SOURCE_ROOT; };
+		9A30040F1801E79900EDC73D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Cancer Distress Coach/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		9A3004101801E79900EDC73D /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = "Cancer Distress Coach/iTunesArtwork"; sourceTree = SOURCE_ROOT; };
+		9A3004181801E7A600EDC73D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Cancer Distress Coach/main.m"; sourceTree = SOURCE_ROOT; };
+		9A30041A1801E7B500EDC73D /* storedata.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = storedata.db; path = "Cancer Distress Coach/storedata.db"; sourceTree = SOURCE_ROOT; };
+		9A30041D1801F26200EDC73D /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Content; path = "Cancer Distress Coach/Content"; sourceTree = "<group>"; };
+		9A844A78163C5EAD00B4DFC2 /* SelectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionCell.xib; sourceTree = "<group>"; };
+		9AB254E91624E6220076342D /* Cancer Distress Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cancer Distress Coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB254ED1624E6220076342D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9AB254EF1624E6220076342D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AB254F11624E6220076342D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9AB257B01625D0C40076342D /* libcoachlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoachlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB257D11625D6970076342D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9AB257D31625D6CC0076342D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9AB257D51625D6F00076342D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9AB257D71625D7230076342D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9AB257D91625D75B0076342D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9AB257DB1625D7720076342D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9AB257DD1625D79E0076342D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9AB257F11625D9C40076342D /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		9AB257F21625D9C40076342D /* blandbar_darker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blandbar_darker.png; sourceTree = "<group>"; };
+		9AB257F31625D9C40076342D /* blue_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button.png; sourceTree = "<group>"; };
+		9AB257F41625D9C40076342D /* blue_button_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_big.png; sourceTree = "<group>"; };
+		9AB257F51625D9C40076342D /* blue_button_navy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_navy.png; sourceTree = "<group>"; };
+		9AB257F61625D9C40076342D /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		9AB257F71625D9C40076342D /* closed_captioning_symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed_captioning_symbol.png; sourceTree = "<group>"; };
+		9AB257F81625D9C40076342D /* delete-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-icon.png"; sourceTree = "<group>"; };
+		9AB257F91625D9C40076342D /* gradient_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient_button.png; sourceTree = "<group>"; };
+		9AB257FA1625D9C40076342D /* green_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_button.png; sourceTree = "<group>"; };
+		9AB257FB1625D9C40076342D /* listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listen.png; sourceTree = "<group>"; };
+		9AB257FC1625D9C40076342D /* mercury.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mercury.png; sourceTree = "<group>"; };
+		9AB257FD1625D9C40076342D /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		9AB257FE1625D9C40076342D /* table_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_bg.png; sourceTree = "<group>"; };
+		9AB257FF1625D9C40076342D /* table_bg_darker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_bg_darker.png; sourceTree = "<group>"; };
+		9AB258001625D9C40076342D /* therm_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = therm_marker.png; sourceTree = "<group>"; };
+		9AB258011625D9C40076342D /* thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thermometer.png; sourceTree = "<group>"; };
+		9AB258021625D9C40076342D /* thermometer_marks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thermometer_marks.png; sourceTree = "<group>"; };
+		9AB258031625D9C40076342D /* thumbsdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsdown.png; sourceTree = "<group>"; };
+		9AB258041625D9C40076342D /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsup.png; sourceTree = "<group>"; };
+		9AB258051625D9C40076342D /* white_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_button.png; sourceTree = "<group>"; };
+		9AB258061625D9C40076342D /* white_button_no_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_button_no_shadow.png; sourceTree = "<group>"; };
+		9AB258071625D9C40076342D /* xray_man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xray_man.jpg; sourceTree = "<group>"; };
+		9AB258081625D9C40076342D /* zoom_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_image.png; sourceTree = "<group>"; };
+		9AB2580A1625D9C40076342D /* ContentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentListViewController.xib; sourceTree = "<group>"; };
+		9AB2580B1625D9C40076342D /* GroupedContentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupedContentListViewController.xib; sourceTree = "<group>"; };
+		9AB2580C1625D9C40076342D /* HistoryGraphViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryGraphViewController.xib; sourceTree = "<group>"; };
+		9AB2580D1625D9C40076342D /* InputAccessory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputAccessory.xib; sourceTree = "<group>"; };
+		9AB2580E1625D9C40076342D /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		9AB2580F1625D9C40076342D /* SUDSView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUDSView.xib; sourceTree = "<group>"; };
+		9ACAD19B1625F816007FBA7A /* userdata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = userdata.xcdatamodel; path = ../common/userdata.xcdatamodel; sourceTree = "<group>"; };
+		B90BB2A61916EA1000CB37D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B90BB2A81916ECA700CB37D6 /* cancerdistresscoach_content.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = cancerdistresscoach_content.xml; path = ../../content/ptsdcoach/cancerdistresscoach_content.xml; sourceTree = "<group>"; };
+		B9E9568919183A2700563F35 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		B9E9568B19183A2700563F35 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		B9E9568C19183A2700563F35 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AB254E61624E6220076342D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90BB2A71916EA1000CB37D6 /* Security.framework in Frameworks */,
+				9A3003F617F9084D00EDC73D /* MessageUI.framework in Frameworks */,
+				9A3003F417F9073500EDC73D /* CoreImage.framework in Frameworks */,
+				B9E9568D19183A2700563F35 /* HockeySDK.framework in Frameworks */,
+				9A3003F317F9072200EDC73D /* JavaScriptCore.framework in Frameworks */,
+				9A3003F117F9070500EDC73D /* ImageIO.framework in Frameworks */,
+				9AB254F21624E6220076342D /* CoreGraphics.framework in Frameworks */,
+				9A3003ED17F9068F00EDC73D /* CoreText.framework in Frameworks */,
+				9A1551BA1625E8AA00E8DF40 /* AddressBookUI.framework in Frameworks */,
+				9A1551B81625E7D500E8DF40 /* libc++.dylib in Frameworks */,
+				9A1551B61625E7C200E8DF40 /* MediaPlayer.framework in Frameworks */,
+				9A1551B41625E7B300E8DF40 /* libxml2.dylib in Frameworks */,
+				9A1551B21625E7A000E8DF40 /* AddressBook.framework in Frameworks */,
+				9A1551AF1625E78500E8DF40 /* EventKit.framework in Frameworks */,
+				9A1551B01625E78500E8DF40 /* EventKitUI.framework in Frameworks */,
+				9AB257DE1625D79E0076342D /* QuartzCore.framework in Frameworks */,
+				9AB257DC1625D7720076342D /* libz.dylib in Frameworks */,
+				9AB257DA1625D75B0076342D /* MobileCoreServices.framework in Frameworks */,
+				9AB257D81625D7230076342D /* SystemConfiguration.framework in Frameworks */,
+				9AB257D61625D6F00076342D /* AVFoundation.framework in Frameworks */,
+				9AB257D41625D6CC0076342D /* CoreData.framework in Frameworks */,
+				9AB257D21625D6970076342D /* CFNetwork.framework in Frameworks */,
+				9AB257B11625D0C40076342D /* libcoachlib.a in Frameworks */,
+				9AB254EE1624E6220076342D /* UIKit.framework in Frameworks */,
+				9AB254F01624E6220076342D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A2C7FA918285B18009B267C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2C7FAD18285B18009B267C /* libcoachlib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AB254DE1624E6220076342D = {
+			isa = PBXGroup;
+			children = (
+				9A2C7FA818285B18009B267C /* coachlib.xcodeproj */,
+				9A2DDE4F162603D000AD6A78 /* coachlib.xcdatamodeld */,
+				9ACAD19B1625F816007FBA7A /* userdata.xcdatamodel */,
+				B90BB2A81916ECA700CB37D6 /* cancerdistresscoach_content.xml */,
+				9A30041D1801F26200EDC73D /* Content */,
+				9AB257DF1625D9C40076342D /* Resources */,
+				9AB254F31624E6220076342D /* Cancer Coach */,
+				9AB254EC1624E6220076342D /* Frameworks */,
+				9AB254EA1624E6220076342D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AB254EA1624E6220076342D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AB254E91624E6220076342D /* Cancer Distress Coach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AB254EC1624E6220076342D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9568819183A2700563F35 /* HockeySDK.embeddedframework */,
+				B90BB2A61916EA1000CB37D6 /* Security.framework */,
+				9A3003F517F9084D00EDC73D /* MessageUI.framework */,
+				9A3003F217F9072200EDC73D /* JavaScriptCore.framework */,
+				9A3003F017F9070500EDC73D /* ImageIO.framework */,
+				9A3003EE17F906F000EDC73D /* CoreImage.framework */,
+				9A3003EC17F9068F00EDC73D /* CoreText.framework */,
+				9A1551B91625E8AA00E8DF40 /* AddressBookUI.framework */,
+				9A1551B71625E7D500E8DF40 /* libc++.dylib */,
+				9A1551B51625E7C200E8DF40 /* MediaPlayer.framework */,
+				9A1551B31625E7B300E8DF40 /* libxml2.dylib */,
+				9A1551B11625E7A000E8DF40 /* AddressBook.framework */,
+				9A1551AD1625E78500E8DF40 /* EventKit.framework */,
+				9A1551AE1625E78500E8DF40 /* EventKitUI.framework */,
+				9AB257DD1625D79E0076342D /* QuartzCore.framework */,
+				9AB257DB1625D7720076342D /* libz.dylib */,
+				9AB257D91625D75B0076342D /* MobileCoreServices.framework */,
+				9AB257D71625D7230076342D /* SystemConfiguration.framework */,
+				9AB257D51625D6F00076342D /* AVFoundation.framework */,
+				9AB257D31625D6CC0076342D /* CoreData.framework */,
+				9AB257D11625D6970076342D /* CFNetwork.framework */,
+				9AB257B01625D0C40076342D /* libcoachlib.a */,
+				9AB254ED1624E6220076342D /* UIKit.framework */,
+				9AB254EF1624E6220076342D /* Foundation.framework */,
+				9AB254F11624E6220076342D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB254F31624E6220076342D /* Cancer Coach */ = {
+			isa = PBXGroup;
+			children = (
+				9A30041A1801E7B500EDC73D /* storedata.db */,
+				9AB254F41624E6220076342D /* Supporting Files */,
+			);
+			name = "Cancer Coach";
+			path = "PTSD Coach";
+			sourceTree = "<group>";
+		};
+		9AB254F41624E6220076342D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A3004181801E7A600EDC73D /* main.m */,
+				9A30040E1801E79900EDC73D /* Icon.png */,
+				9A30040F1801E79900EDC73D /* Icon@2x.png */,
+				9A3004101801E79900EDC73D /* iTunesArtwork */,
+				9A3004021801E78600EDC73D /* Default-568h@2x.png */,
+				9A3004031801E78600EDC73D /* Default.png */,
+				9A3004041801E78600EDC73D /* Default@2x.png */,
+				9A3004051801E78600EDC73D /* defaultTheme.plist */,
+				9A3003FD1801E6F600EDC73D /* Cancer Distress Coach-Info.plist */,
+				9A3003FE1801E6F600EDC73D /* Cancer Distress Coach-Prefix.pch */,
+				9A3003FF1801E6F600EDC73D /* Cancer Distress Coach.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AB257DF1625D9C40076342D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AB257E01625D9C40076342D /* Images */,
+				9AB258091625D9C40076342D /* XIB */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		9AB257E01625D9C40076342D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9AB257F11625D9C40076342D /* ball.png */,
+				9AB257F21625D9C40076342D /* blandbar_darker.png */,
+				9AB257F31625D9C40076342D /* blue_button.png */,
+				9AB257F41625D9C40076342D /* blue_button_big.png */,
+				9AB257F51625D9C40076342D /* blue_button_navy.png */,
+				9AB257F61625D9C40076342D /* checkmark.png */,
+				9AB257F71625D9C40076342D /* closed_captioning_symbol.png */,
+				9AB257F81625D9C40076342D /* delete-icon.png */,
+				9AB257F91625D9C40076342D /* gradient_button.png */,
+				9AB257FA1625D9C40076342D /* green_button.png */,
+				9AB257FB1625D9C40076342D /* listen.png */,
+				9AB257FC1625D9C40076342D /* mercury.png */,
+				9AB257FD1625D9C40076342D /* star.png */,
+				9AB257FE1625D9C40076342D /* table_bg.png */,
+				9AB257FF1625D9C40076342D /* table_bg_darker.png */,
+				9AB258001625D9C40076342D /* therm_marker.png */,
+				9AB258011625D9C40076342D /* thermometer.png */,
+				9AB258021625D9C40076342D /* thermometer_marks.png */,
+				9AB258031625D9C40076342D /* thumbsdown.png */,
+				9AB258041625D9C40076342D /* thumbsup.png */,
+				9AB258051625D9C40076342D /* white_button.png */,
+				9A3003FB17F90EEF00EDC73D /* cc_icon.png */,
+				9AB258061625D9C40076342D /* white_button_no_shadow.png */,
+				9AB258071625D9C40076342D /* xray_man.jpg */,
+				9AB258081625D9C40076342D /* zoom_image.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9AB258091625D9C40076342D /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2580A1625D9C40076342D /* ContentListViewController.xib */,
+				9AB2580B1625D9C40076342D /* GroupedContentListViewController.xib */,
+				9AB2580C1625D9C40076342D /* HistoryGraphViewController.xib */,
+				9AB2580D1625D9C40076342D /* InputAccessory.xib */,
+				9AB2580E1625D9C40076342D /* MainWindow.xib */,
+				9AB2580F1625D9C40076342D /* SUDSView.xib */,
+				9A2DE11D162E225D00AD6A78 /* ToggleBar.xib */,
+				9A844A78163C5EAD00B4DFC2 /* SelectionCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		B9E9568819183A2700563F35 /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9568919183A2700563F35 /* HockeySDK.framework */,
+				B9E9568A19183A2700563F35 /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "Cancer Distress Coach/HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		B9E9568A19183A2700563F35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9568B19183A2700563F35 /* HockeySDK.xcconfig */,
+				B9E9568C19183A2700563F35 /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9A2DDE551626049700AD6A78 /* Cancer Distress Coach Content */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"$(SRCROOT)/../../content/ptsdcoach/cancerdistresscoach_content.xml\" \"$(SRCROOT)/Cancer Distress Coach/storedata.db\" \"$(SRCROOT)/../../content/ptsdcoach\" \"$(SRCROOT)/Cancer Distress Coach/Content\"";
+			buildConfigurationList = 9A2DDE561626049700AD6A78 /* Build configuration list for PBXLegacyTarget "Cancer Distress Coach Content" */;
+			buildPhases = (
+			);
+			buildToolPath = ./build_content_db.sh;
+			buildWorkingDirectory = "$(SRCROOT)/../contentbuilder";
+			dependencies = (
+			);
+			name = "Cancer Distress Coach Content";
+			passBuildSettingsInEnvironment = 1;
+			productName = "PTSD Coach Content";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		9AB254E81624E6220076342D /* Cancer Distress Coach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB255071624E6220076342D /* Build configuration list for PBXNativeTarget "Cancer Distress Coach" */;
+			buildPhases = (
+				9AB254E51624E6220076342D /* Sources */,
+				9AB254E61624E6220076342D /* Frameworks */,
+				9AB254E71624E6220076342D /* Resources */,
+				B9E95686191839C700563F35 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A2DDE5A162604A600AD6A78 /* PBXTargetDependency */,
+			);
+			name = "Cancer Distress Coach";
+			productName = "PTSD Coach";
+			productReference = 9AB254E91624E6220076342D /* Cancer Distress Coach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AB254E01624E6220076342D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Department of Veteran's Affairs";
+				TargetAttributes = {
+					9AB254E81624E6220076342D = {
+						DevelopmentTeam = 2ZRB496A34;
+					};
+				};
+			};
+			buildConfigurationList = 9AB254E31624E6220076342D /* Build configuration list for PBXProject "Cancer Distress Coach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AB254DE1624E6220076342D;
+			productRefGroup = 9AB254EA1624E6220076342D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9A2C7FA918285B18009B267C /* Products */;
+					ProjectRef = 9A2C7FA818285B18009B267C /* coachlib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9AB254E81624E6220076342D /* Cancer Distress Coach */,
+				9A2DDE551626049700AD6A78 /* Cancer Distress Coach Content */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9A2C7FAD18285B18009B267C /* libcoachlib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcoachlib.a;
+			remoteRef = 9A2C7FAC18285B18009B267C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AB254E71624E6220076342D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3004161801E79900EDC73D /* Icon@2x.png in Resources */,
+				9A3004081801E78600EDC73D /* Default@2x.png in Resources */,
+				9AB258201625D9C40076342D /* ball.png in Resources */,
+				9AB258211625D9C40076342D /* blandbar_darker.png in Resources */,
+				9A3004011801E6F600EDC73D /* Cancer Distress Coach.entitlements in Resources */,
+				9AB258221625D9C40076342D /* blue_button.png in Resources */,
+				9A3003FC17F90EEF00EDC73D /* cc_icon.png in Resources */,
+				9AB258231625D9C40076342D /* blue_button_big.png in Resources */,
+				9AB258241625D9C40076342D /* blue_button_navy.png in Resources */,
+				9A30041B1801E7B500EDC73D /* storedata.db in Resources */,
+				B90BB2A91916ECA700CB37D6 /* cancerdistresscoach_content.xml in Resources */,
+				9A3004071801E78600EDC73D /* Default.png in Resources */,
+				9AB258251625D9C40076342D /* checkmark.png in Resources */,
+				9A3004001801E6F600EDC73D /* Cancer Distress Coach-Info.plist in Resources */,
+				9AB258261625D9C40076342D /* closed_captioning_symbol.png in Resources */,
+				9AB258271625D9C40076342D /* delete-icon.png in Resources */,
+				9A30041E1801F26200EDC73D /* Content in Resources */,
+				9AB258281625D9C40076342D /* gradient_button.png in Resources */,
+				9AB258291625D9C40076342D /* green_button.png in Resources */,
+				9AB2582A1625D9C40076342D /* listen.png in Resources */,
+				9A3004061801E78600EDC73D /* Default-568h@2x.png in Resources */,
+				9AB2582B1625D9C40076342D /* mercury.png in Resources */,
+				9AB2582C1625D9C40076342D /* star.png in Resources */,
+				9AB2582D1625D9C40076342D /* table_bg.png in Resources */,
+				9AB2582E1625D9C40076342D /* table_bg_darker.png in Resources */,
+				9AB2582F1625D9C40076342D /* therm_marker.png in Resources */,
+				9A3004171801E79900EDC73D /* iTunesArtwork in Resources */,
+				9AB258301625D9C40076342D /* thermometer.png in Resources */,
+				B9E9568F19183A2700563F35 /* HockeySDKResources.bundle in Resources */,
+				9AB258311625D9C40076342D /* thermometer_marks.png in Resources */,
+				9AB258321625D9C40076342D /* thumbsdown.png in Resources */,
+				9AB258331625D9C40076342D /* thumbsup.png in Resources */,
+				9AB258341625D9C40076342D /* white_button.png in Resources */,
+				9AB258351625D9C40076342D /* white_button_no_shadow.png in Resources */,
+				9AB258361625D9C40076342D /* xray_man.jpg in Resources */,
+				9AB258371625D9C40076342D /* zoom_image.png in Resources */,
+				9AB258381625D9C40076342D /* ContentListViewController.xib in Resources */,
+				B9E9568E19183A2700563F35 /* HockeySDK.xcconfig in Resources */,
+				9A3004151801E79900EDC73D /* Icon.png in Resources */,
+				9A3004091801E78600EDC73D /* defaultTheme.plist in Resources */,
+				9AB258391625D9C40076342D /* GroupedContentListViewController.xib in Resources */,
+				9AB2583A1625D9C40076342D /* HistoryGraphViewController.xib in Resources */,
+				9AB2583B1625D9C40076342D /* InputAccessory.xib in Resources */,
+				9AB2583C1625D9C40076342D /* MainWindow.xib in Resources */,
+				9AB2583D1625D9C40076342D /* SUDSView.xib in Resources */,
+				9A2DE11E162E225E00AD6A78 /* ToggleBar.xib in Resources */,
+				9A844A79163C5EAD00B4DFC2 /* SelectionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9E95686191839C700563F35 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/Cancer Distress Coach/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AB254E51624E6220076342D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACAD19C1625F816007FBA7A /* userdata.xcdatamodel in Sources */,
+				9A3004191801E7A600EDC73D /* main.m in Sources */,
+				9A2DDE51162603D000AD6A78 /* coachlib.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A2DDE5A162604A600AD6A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2DDE551626049700AD6A78 /* Cancer Distress Coach Content */;
+			targetProxy = 9A2DDE59162604A600AD6A78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A2DDE571626049700AD6A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUGGING_SYMBOLS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Cancer Distress Coach Content";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9A2DDE581626049700AD6A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Cancer Distress Coach Content";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AB255051624E6220076342D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9AB255061624E6220076342D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AB255081624E6220076342D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "Cancer Distress Coach/Cancer Distress Coach.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"./**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cancer Distress Coach/Cancer Distress Coach-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../coachlib/coachlib/**",
+					"$(PROJECT_DIR/Cancer\\ Distress\\ Coach/HockeySDK-iOS/HockeySDK.embeddedFramework",
+				);
+				INFOPLIST_FILE = "Cancer Distress Coach/Cancer Distress Coach-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-licucore",
+					"-fobjc-arc",
+				);
+				PRODUCT_NAME = "Cancer Distress Coach";
+				PROVISIONING_PROFILE = "09653F73-9C66-44F1-9BBA-5A31950AE0AB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09653F73-9C66-44F1-9BBA-5A31950AE0AB";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9AB255091624E6220076342D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "Cancer Distress Coach/Cancer Distress Coach.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kenneth Carruthers (2ZRB496A34)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"./**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cancer Distress Coach/Cancer Distress Coach-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"../coachlib/coachlib/**",
+					"$(PROJECT_DIR/Cancer\\ Distress\\ Coach/HockeySDK-iOS/HockeySDK.embeddedFramework",
+				);
+				INFOPLIST_FILE = "Cancer Distress Coach/Cancer Distress Coach-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-licucore",
+					"-fobjc-arc",
+				);
+				PRODUCT_NAME = "Cancer Distress Coach";
+				PROVISIONING_PROFILE = "21DE6D3A-9482-4D41-A9AD-19AAB959F60C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "21DE6D3A-9482-4D41-A9AD-19AAB959F60C";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A2DDE561626049700AD6A78 /* Build configuration list for PBXLegacyTarget "Cancer Distress Coach Content" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2DDE571626049700AD6A78 /* Debug */,
+				9A2DDE581626049700AD6A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB254E31624E6220076342D /* Build configuration list for PBXProject "Cancer Distress Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB255051624E6220076342D /* Debug */,
+				9AB255061624E6220076342D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB255071624E6220076342D /* Build configuration list for PBXNativeTarget "Cancer Distress Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB255081624E6220076342D /* Debug */,
+				9AB255091624E6220076342D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A2DDE4F162603D000AD6A78 /* coachlib.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A2DDE50162603D000AD6A78 /* coachlib.xcdatamodel */,
+			);
+			currentVersion = 9A2DDE50162603D000AD6A78 /* coachlib.xcdatamodel */;
+			name = coachlib.xcdatamodeld;
+			path = ../common/coachlib.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9AB254E01624E6220076342D /* Project object */;
+}

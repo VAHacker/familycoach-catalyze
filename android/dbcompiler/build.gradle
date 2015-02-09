@@ -1,0 +1,17 @@
+
+apply plugin: 'java'
+apply plugin:'application'
+
+mainClassName = "gov.va.ptsd.ptsdcoach.compiler.Main"
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}

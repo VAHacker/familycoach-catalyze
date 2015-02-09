@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PTSD Coach</string>
+    <string name="contentAppName">PTSD Coach</string>
+    <string name="contentReminderIntent">gov.va.ptsd.ptsdcoach.REMIND_ASSESSMENT</string>
+    <string name="contentAssessmentIntent">gov.va.ptsd.ptsdcoach.TAKE_ASSESSMENT</string>
+</resources>

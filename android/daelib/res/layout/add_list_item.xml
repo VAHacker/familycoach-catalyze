@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:minHeight="?android:attr/listPreferredItemHeight">
+	<ImageView 
+		android:id="@android:id/icon"
+		android:layout_width="72dip" 
+		android:layout_height="72dip"
+		android:padding="6dip" 
+		android:scaleType="centerInside"
+		android:layout_gravity="center"
+		android:src="@drawable/add_icon32x32"/>
+	<TextView 
+		android:id="@android:id/title" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="fill_vertical" 
+		android:paddingLeft="6dip"
+		android:layout_marginLeft="6dip" 
+		android:text="Add item..."/>
+</LinearLayout>

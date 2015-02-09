@@ -1,0 +1,35 @@
+*.DS_Store
+**/.DS_Store
+*xcuserdata
+ios/ptsdcoach/Content/*
+!ios/ptsdcoach/Content/.placeholder
+ios/ptsdfamilycoach/Content/*
+!ios/ptsdfamilycoach/Content/.placeholder
+ios/ptsdexplorer/Content/*
+!ios/ptsdexplorer/Content/.placeholder
+ios/ptsdema/Content/*
+!ios/ptsdema/Content/.placeholder
+ios/pcl.xml
+ios/contentbuild_bin/
+ios/contentbuilder/out/
+ios/iStressLess.xcodeproj/xcuserdata
+ios/iStressLess.xcodeproj/project.xcworkspace/xcuserdata
+ios2/coachapps.xcworkspace/xcuserdata
+ios2/PTSD Assist/PTSD Assist/Content
+ios2/PTSD Coach/PTSD Coach/Content
+ios2/PTSD Family Coach/PTSD Family Coach/Content
+ios2/TBI Coach/TBI Coach/Content
+android/ptsdassist/assets/Content
+android/ptsdcoach/assets/Content
+android/ptsdfamilycoach/assets/Content
+ios/**/Content/
+!./content
+*storedata.db
+*content.db
+*.xccheckout
+*gen
+*bin
+*build
+*builds
+*DerivedData
+*local.properties

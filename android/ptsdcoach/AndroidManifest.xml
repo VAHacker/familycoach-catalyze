@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="gov.va.ptsd.ptsdcoach" android:versionCode="2" 	
+	android:versionName="1.1" xmlns:android="http://schemas.android.com/apk/res/android">
+	<uses-sdk android:targetSdkVersion="17" android:minSdkVersion="10"/>
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+	<application 
+	    android:icon="@drawable/icon" 
+	    android:label="@string/app_name" 
+	    android:theme="@style/AppTheme" 
+	    android:enabled="true"
+	    android:allowBackup="true"
+	    android:hardwareAccelerated="false"
+	    >
+		<meta-data android:name="contentAppName" android:value="@string/app_name" />
+		<meta-data android:name="contentAssessmentIntent" android:value="gov.va.ptsd.ptsdcoach.TAKE_ASSESSMENT" />
+		<meta-data android:name="contentReminderIntent" android:value="gov.va.ptsd.ptsdcoach.ENTER_SETUP" />
+			    	    
+		<activity 
+		    android:name="gov.va.ptsd.ptsdcoach.PTSDCoach" 
+		    android:theme="@style/AppTheme" 
+		    android:label="@string/app_name" 
+		    android:screenOrientation="portrait" 
+		    android:launchMode="singleTop"
+		    >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="gov.va.ptsd.ptsdcoach.TAKE_ASSESSMENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="gov.va.ptsd.ptsdcoach.ENTER_SETUP" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- ContentLib stuff -->
+
+		<activity android:name="gov.va.contentlib.BackgroundActivity">
+		</activity>
+
+		<activity android:name="gov.va.contentlib.activities.NavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.activities.HomeNavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.activities.ManageNavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.activities.AssessNavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.content.ContentActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.activities.QuestionnaireActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.activities.FavoritesListActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name="gov.va.contentlib.activities.SetupActivity" android:screenOrientation="portrait"></activity>
+
+		<activity android:name="gov.va.contentlib.activities.CalendarChoiceActivity" android:screenOrientation="portrait"></activity>
+		
+		<receiver android:name="gov.va.contentlib.AssessmentReminder" android:enabled="true" android:exported="true">
+		    <meta-data android:name="contentAppName" android:value="@string/contentAppName" />
+		    <meta-data android:name="contentAssessmentIntent" android:value="@string/contentAssessmentIntent" />
+		    <intent-filter>
+				<action android:name="au.gov.dva.ptsdassist.REMIND_ASSESSMENT"></action>
+			</intent-filter>
+		</receiver>
+
+		<provider android:name="gov.va.contentlib.services.LocalJsProvider" android:authorities="gov.va.contentlib.services.localjs" />
+		<provider android:name="gov.va.contentlib.services.TtsContentProvider" android:authorities="gov.va.contentlib.services.tts" />
+		
+	</application>
+</manifest>

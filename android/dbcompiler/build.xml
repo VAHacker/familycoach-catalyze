@@ -1,0 +1,98 @@
+<project name="dbcompiler" default="compiledb" basedir=".">
+    <description>
+        build content db for PTSD Coach
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}" classpath="lib/jdom.jar:lib/sqlitejdbc-v056.jar:lib/nekohtml.jar:lib/xercesImpl.jar"/>
+  </target>
+
+<!--
+  <target name="compiledb_ptsdcoach" depends="compile" description="build the content database" >
+  	<java classname="gov.va.ptsd.ptsdcoach.compiler.Main" fork="true" classpath="lib/jdom.jar:lib/sqlitejdbc-v056.jar">
+      <arg value="../../content/ptsdcoach/content.xml"/>
+      <arg value="../ptsdcoach/assets/content.db"/>
+      <classpath>
+        <pathelement location="build"/>
+  	  </classpath>    
+  	</java>
+  	<copy todir="../ptsdcoach/assets/Content">
+  	  <fileset dir="../../content/ptsdcoach">
+  	    <exclude name="content.xml"/>
+  	    <exclude name="pcl.xml"/>
+  	  </fileset>
+  	</copy>
+  	<copy file="../../content/ptsdcoach/pcl.xml" todir="../ptsdcoach/assets" />
+  </target>
+
+  <target name="compiledb_ptsdfamilycoach" depends="compile" description="build the ptsdfamilycoach content database" >
+        <java classname="gov.va.ptsd.ptsdcoach.compiler.Main" fork="true" classpath="lib/jdom.jar:lib/sqlitejdbc-v056.jar">
+      <arg value="../../content/ptsdfamilycoach/content.xml"/>
+      <arg value="../ptsdfamilycoach/assets/content.db"/>
+      <classpath>
+        <pathelement location="build"/>
+          </classpath>
+        </java>
+        <copy todir="../ptsdfamilycoach/assets/Content">
+          <fileset dir="../../content/ptsdfamilycoach">
+            <exclude name="content.xml"/>
+            <exclude name="pcl.xml"/>
+          </fileset>
+        </copy>
+        <copy file="../../content/ptsdfamilycoach/pcl.xml" todir="../ptsdfamilycoach/assets" />
+  </target>
+
+-DcontentXML="../../content/ptsdcoach/ptsdassist_content.xml"
+-DcontentDB="../ptsdassist/assets/content.db"
+-DcontentSrcDir="../../content/ptsdcoach"
+-DcontentDstDir="../ptsdassist/assets/Content"
+-->
+
+  <target name="checkforchanges">
+      <uptodate property="noChanges" targetfile="${contentDB}">
+         <srcfiles dir="." includes="${contentXML}"/>
+      <!--  
+         <srcfiles dir="build" includes="**/*.class"/>
+      -->
+      </uptodate>
+      <!--  
+      <uptodate property="anyChanges" >
+         <srcfiles dir="${contentSrcDir}" includes="*"/>
+         <chainedmapper>
+		 	<flattenmapper/>
+		 	<globmapper from="*" to="${contentDstDir}/*"/>
+		 </chainedmapper>
+      </uptodate>
+      -->
+   </target>
+   
+  <target name="compiledb" depends="compile, checkforchanges" description="build a content database" >
+      <java classname="gov.va.ptsd.ptsdcoach.compiler.Main" fork="true" classpath="lib/jdom.jar:lib/sqlitejdbc-v056.jar:lib/nekohtml.jar:lib/xercesImpl.jar">
+        <arg value="${contentXML}"/>
+        <arg value="${contentDB}"/>
+        <arg value="${contentSrcDir}"/>
+        <arg value="${contentDstDir}"/>
+        <classpath>
+          <pathelement location="build"/>
+        </classpath>
+      </java>
+  </target>
+  
+  <target name="clean" description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+  </target>
+
+</project>

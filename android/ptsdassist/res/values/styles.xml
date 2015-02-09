@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   <style name="AppTheme" parent="@style/DarkOldTheme">
+        <item name="contentAppName">PTSD Coach Australia</item>
+        <item name="contentReminderIntent">au.gov.dva.ptsdassist.REMIND_ASSESSMENT</item>
+        <item name="contentAssessmentIntent">au.gov.dva.ptsdassist.TAKE_ASSESSMENT</item>
+    </style>
+   
+</resources>

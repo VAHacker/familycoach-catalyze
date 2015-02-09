@@ -1,0 +1,7 @@
+<resources>
+<!-- 
+    <style name="AppTheme" parent="Theme.Sherlock.Light" />
+-->
+	<style name="DefaultThemeV11" parent="@style/NewTheme"/>
+
+</resources>

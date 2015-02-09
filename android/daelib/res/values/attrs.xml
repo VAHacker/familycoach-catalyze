@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+	<declare-styleable name="CompoundButton">
+		<attr name="android:button" />
+	</declare-styleable>
+	<declare-styleable name="ContentView">
+       <attr name="contentHelpIcon" format="reference" />
+	   <attr name="contentViewBackground" format="reference" />
+	   <attr name="contentListViewHeaderBackground" format="reference" />
+	   <attr name="contentListPreferredItemPaddingLeft" format="dimension" />
+	   <attr name="contentListPreferredItemPaddingRight" format="dimension" />
+	   <attr name="contentListChoiceBackgroundIndicator" format="reference" />
+	   <attr name="contentTextAppearanceListItem" format="reference" />
+	   <attr name="contentContactListItem" format="reference" />
+	   <attr name="contentTabStyle">
+           <enum name="actionBar" value="1" />
+           <enum name="tabHost" value="2" />
+		</attr>
+	   <attr name="contentToolUseScoringEnabled" format="boolean"/>
+	   <attr name="contentFavoritesEnabled" format="boolean"/>
+	   <attr name="contentFavoritesIcon" format="reference"/>
+	   <attr name="contentThumbsEnabled" format="boolean"/>
+	   <attr name="contentThumbsUpIcon" format="reference"/>
+	   <attr name="contentThumbsDownIcon" format="reference"/>
+	   <attr name="contentAppName" format="string" />
+       <attr name="contentReminderIntent" format="string" />
+       <attr name="contentAssessmentIntent" format="string" />
+	</declare-styleable>
+	
+</resources>

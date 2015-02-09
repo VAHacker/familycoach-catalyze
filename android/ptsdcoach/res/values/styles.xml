@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   <style name="AppTheme" parent="@style/DarkOldTheme">
+        <item name="@attr/contentAppName">PTSD Coach</item>
+        <item name="@attr/contentReminderIntent">gov.va.ptsd.ptsdcoach.REMIND_ASSESSMENT</item>
+        <item name="@attr/contentAssessmentIntent">gov.va.ptsd.ptsdcoach.TAKE_ASSESSMENT</item>
+        <item name="@attr/contentThumbsEnabled">true</item>
+        <item name="@attr/contentThumbsUpIcon">@drawable/thumbsup</item>
+        <item name="@attr/contentThumbsDownIcon">@drawable/thumbsdown</item>
+   </style>
+   
+</resources>

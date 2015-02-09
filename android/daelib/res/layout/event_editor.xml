@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	app:columnCount="2"    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView  
+	    android:text="Title:"
+	/>  
+   	<EditText  
+	    android:id="@+id/eventName" 
+    	android:hint="Event title"
+    	app:layout_gravity="fill_horizontal"
+    />
+	<TextView  
+	    android:text="Date:"
+	/>  
+	<TextView   
+		android:id="@+id/datePicker" 
+		style="?android:attr/spinnerStyle"
+    	app:layout_gravity="fill_horizontal"
+	/>  
+	<TextView  
+	    android:text="Start time:"
+	/>  
+	<TextView  
+	    android:id="@+id/startTimePicker" 
+		style="?android:attr/spinnerStyle"
+    	app:layout_gravity="fill_horizontal"
+    />  
+	<TextView  
+	    android:text="End time:"
+	/>  
+	<TextView  
+	    android:id="@+id/endTimePicker" 
+		style="?android:attr/spinnerStyle"
+    	app:layout_gravity="fill_horizontal"
+    />  
+</android.support.v7.widget.GridLayout>

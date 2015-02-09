@@ -1,0 +1,115 @@
+<questionnaire id="pcl">
+
+	<globals>
+		<title>
+			<text locale="en">Assessment</text>
+		</title>
+		<notification>
+			<text locale="en">It is time to fill out your periodic assessment.</text>
+		</notification>
+		<nextButton>
+			<text locale="en">Next</text>
+		</nextButton>
+	</globals>
+
+	<screen title="Little Interest or Pleasure">
+		<multi id="phq91">
+			<text>In the past week, how often have you been bothered by having little interest or pleasure in doing things?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Depressed or Hopeless">
+		<multi id="phq92">
+			<text>In the past week, how often have you been bothered by feeling down, depressed or hopeless?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Trouble with Sleep">
+		<multi id="phq93">
+			<text>In the past week, how often have you been bothered by trouble falling or staying asleep, or sleeping too much?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Feeling Tired">
+		<multi id="phq94">
+			<text>In the past week, how often have you been bothered by feeling tired or having little energy?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Poor Appetite or Overeating">
+		<multi id="phq95">
+			<text>In the past week, how often have you been bothered by poor appetite or overeating?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Feeling Bad about Yourself">
+		<multi id="phq96">
+			<text>In the past week, how often have you been bothered by feeling bad about yourself - or that you are a failure or have let your family down?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Trouble Concentrating">
+		<multi id="phq97">
+			<text>In the past week, how often have you been bothered by trouble concentrating on things, such as reading the newspaper or watching television?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+	<screen title="Moving Slowly or Feeling Fidgety">
+		<multi id="phq98">
+			<text>In the past week, how often have you been bothered by moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+      
+	<screen title="Suicidal Ideation">
+		<multi id="phq99">
+			<text>In the past week, how often have you been bothered by thoughts that you would be better off dead, or of hurting yourself in some way?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Several days</choice>
+			<choice value="2">More than half of the days</choice>
+			<choice value="3">Nearly every day</choice>
+		</multi>
+	</screen>
+
+    <screen title="Functioning">
+		<multi id="functioning">
+			<text>In the past week, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</text>
+			<choice value="0">Not at all</choice>
+			<choice value="1">Somewhat difficult</choice>
+			<choice value="2">Very difficult</choice>
+			<choice value="3">Extremely difficult</choice>
+		</multi>
+	</screen>
+
+</questionnaire>

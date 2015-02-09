@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="gov.va.contentlib"
+      android:versionCode="1"
+      android:versionName="1.0">
+	<uses-sdk android:targetSdkVersion="7" android:minSdkVersion="7"/>
+    
+    <application>
+
+		<activity android:name=".activities.AudioEditListActivity"
+		android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="gov.va.ptsd.ptsdcoach.activities.AudioEditListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activities.ImageEditListActivity"
+		android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="gov.va.ptsd.ptsdcoach.activities.ImageEditListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activities.ContactsEditListActivity"
+		android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="gov.va.ptsd.ptsdcoach.activities.ContactsEditListActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".activities.EULA" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="gov.va.contentlib.activities.EULA" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".activities.FirstLaunch" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="gov.va.contentlib.activities.FirstLaunch" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".activities.NavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name=".activities.HomeNavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name=".activities.ManageNavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name=".activities.AssessNavigationController" android:screenOrientation="portrait"></activity>
+		<activity android:name=".content.ContentActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".activities.QuestionnaireActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".activities.FavoritesListActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".activities.SetupActivity" android:screenOrientation="portrait"></activity>
+		<receiver android:name="AssessmentReminder">
+			<intent-filter>
+				<action android:name="gov.va.ptsd.ptsdcoach.REMIND_ASSESSMENT"></action>
+			</intent-filter>
+		</receiver>
+
+		<provider android:name="gov.va.contentlib.services.LocalJsProvider" android:authorities="gov.va.ptsd.ptsdcoach.services.localjs" />
+		<provider android:name="gov.va.contentlib.services.TtsContentProvider" android:authorities="gov.va.ptsd.ptsdcoach.services.tts" />
+
+    </application>
+</manifest>

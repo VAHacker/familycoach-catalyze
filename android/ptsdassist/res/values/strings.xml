@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PTSD Coach Australia</string>
+    <string name="contentAppName">PTSD Coach Australia</string>
+    <string name="contentReminderIntent">au.gov.dva.ptsdassist.REMIND_ASSESSMENT</string>
+    <string name="contentAssessmentIntent">au.gov.dva.ptsdassist.TAKE_ASSESSMENT</string>
+</resources>

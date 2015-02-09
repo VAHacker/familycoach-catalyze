@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>listTextSize</key>
+	<integer>16</integer>
+	<key>listTextFont</key>
+	<string>Helvetica-Bold</string>
+	<key>listTextColor</key>
+	<string>000000</string>
+	<key>listBackgroundColor</key>
+	<string>FFFFFF</string>
+	<key>buttonBackgroundPatch</key>
+	<string>default_button.9.png</string>
+	<key>buttonBackgroundPatchPressed</key>
+	<string>default_button_pressed.9.png</string>
+	<key>buttonTextColor</key>
+	<string>000000</string>
+	<key>buttonTextColorPressed</key>
+	<string>FFFFFF</string>
+	<key>buttonTextFont</key>
+	<string>Helvetica</string>
+	<key>buttonTextSize</key>
+	<integer>12</integer>
+	<key>textSize</key>
+	<integer>15</integer>
+	<key>textFont</key>
+	<string>Helvetica</string>
+	<key>backgroundColor</key>
+	<string>000000</string>
+	<key>textColor</key>
+	<string>FFFFFF</string>
+	<key>helpIcon</key>
+	<string>help_icon.png</string>
+	<key>homeIcon</key>
+	<string>home_icon.png</string>
+	<key>navBarTintColor</key>
+	<string>2887cf</string>
+	<key>textLinkColor</key>
+	<string>7fc1ff</string>
+</dict>
+</plist>

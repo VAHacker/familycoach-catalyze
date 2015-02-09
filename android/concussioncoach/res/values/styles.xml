@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   <style name="AppTheme" parent="@style/NewTheme">
+        <item name="contentAppName">Concussion Coach</item>
+        <item name="contentThumbsEnabled">true</item>
+        <item name="contentReminderIntent">gov.va.ptsd.concussioncoach.REMIND_ASSESSMENT</item>
+        <item name="contentAssessmentIntent">gov.va.ptsd.concussioncoach.TAKE_ASSESSMENT</item>
+    </style>
+   
+</resources>
