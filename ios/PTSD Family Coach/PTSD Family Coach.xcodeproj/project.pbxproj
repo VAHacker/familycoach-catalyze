@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23C3669C1A88927800C0311F /* ncptsd_logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C3669B1A88927800C0311F /* ncptsd_logo2.png */; };
+		23738B2E1A8C72B000BFED48 /* main in Resources */ = {isa = PBXBuildFile; fileRef = 23738B2D1A8C72B000BFED48 /* main */; };
+		23C3669E1A8965E400C0311F /* FCC Catalyze in Resources */ = {isa = PBXBuildFile; fileRef = 23C3669D1A8965E400C0311F /* FCC Catalyze */; };
 		9A873E43165B45D3003678E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A873E42165B45D3003678E5 /* UIKit.framework */; };
 		9A873E45165B45D3003678E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A873E44165B45D3003678E5 /* Foundation.framework */; };
 		9A873E47165B45D3003678E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A873E46165B45D3003678E5 /* CoreGraphics.framework */; };
@@ -114,7 +115,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23C3669B1A88927800C0311F /* ncptsd_logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ncptsd_logo2.png; path = "../../jason's adjustments/ncptsd_logo2.png"; sourceTree = "<group>"; };
+		23738B2D1A8C72B000BFED48 /* main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main; path = "../../../../../xcode/FC Control Catalyze Version/main"; sourceTree = "<group>"; };
+		23C3669D1A8965E400C0311F /* FCC Catalyze */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "FCC Catalyze"; path = "../../../../xcode/FCC Catalyze"; sourceTree = "<group>"; };
 		9A73F15117123B6400A1E9FF /* libiOSJavaScriptCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiOSJavaScriptCore.a; path = ../lib/libiOSJavaScriptCore.a; sourceTree = "<group>"; };
 		9A73F15317123C5B00A1E9FF /* content.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = content.xml; path = ../../../content/ptsdfamilycoach/content.xml; sourceTree = "<group>"; };
 		9A873E3E165B45D3003678E5 /* Family Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Family Coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,7 +248,7 @@
 		9A873E33165B45D3003678E5 = {
 			isa = PBXGroup;
 			children = (
-				23C3669B1A88927800C0311F /* ncptsd_logo2.png */,
+				23C3669D1A8965E400C0311F /* FCC Catalyze */,
 				9AEFB0C2182858E700A1A163 /* coachlib.xcodeproj */,
 				9A73F15117123B6400A1E9FF /* libiOSJavaScriptCore.a */,
 				9A873EA3165B4A30003678E5 /* coachlib.xcdatamodeld */,
@@ -321,6 +323,7 @@
 				9A873E4A165B45D3003678E5 /* PTSD Family Coach-Info.plist */,
 				9A873E4B165B45D3003678E5 /* InfoPlist.strings */,
 				9A873E4E165B45D3003678E5 /* main.m */,
+				23738B2D1A8C72B000BFED48 /* main */,
 				9A873E50165B45D3003678E5 /* PTSD Family Coach-Prefix.pch */,
 				9A873E54165B45D3003678E5 /* Default.png */,
 				9A873E56165B45D3003678E5 /* Default@2x.png */,
@@ -455,7 +458,7 @@
 				ORGANIZATIONNAME = "Department of Veterans' Affairs";
 				TargetAttributes = {
 					9A873E3D165B45D3003678E5 = {
-						DevelopmentTeam = 8SQK7H5L22;
+						DevelopmentTeam = 7P8HEW4494;
 					};
 				};
 			};
@@ -506,7 +509,6 @@
 				9A873E9B165B4994003678E5 /* Icon-Small-50.png in Resources */,
 				9A873E9C165B4994003678E5 /* Icon-Small.png in Resources */,
 				9A873E9D165B4994003678E5 /* Icon-Small@2x.png in Resources */,
-				23C3669C1A88927800C0311F /* ncptsd_logo2.png in Resources */,
 				9A873E9E165B4994003678E5 /* Icon.png in Resources */,
 				9A873E9F165B4994003678E5 /* Icon@2x.png in Resources */,
 				9A873EA0165B4994003678E5 /* iTunesArtwork in Resources */,
@@ -517,6 +519,7 @@
 				9A873EE3165B4DAC003678E5 /* blue_button.png in Resources */,
 				9A873EE4165B4DAC003678E5 /* blue_button_big.png in Resources */,
 				9A873EE5165B4DAC003678E5 /* blue_button_navy.png in Resources */,
+				23C3669E1A8965E400C0311F /* FCC Catalyze in Resources */,
 				9A873EE6165B4DAC003678E5 /* cc_icon.png in Resources */,
 				9A873EE7165B4DAC003678E5 /* checkmark.png in Resources */,
 				9A873EE8165B4DAC003678E5 /* closed_captioning_symbol.png in Resources */,
@@ -551,6 +554,7 @@
 				9A873F05165B4DAC003678E5 /* zoom_image.png in Resources */,
 				9A873F06165B4DAC003678E5 /* ContentListViewController.xib in Resources */,
 				9A873F07165B4DAC003678E5 /* GroupedContentListViewController.xib in Resources */,
+				23738B2E1A8C72B000BFED48 /* main in Resources */,
 				9A873F08165B4DAC003678E5 /* HistoryGraphViewController.xib in Resources */,
 				9A873F09165B4DAC003678E5 /* InputAccessory.xib in Resources */,
 				9A873F0A165B4DAC003678E5 /* MainWindow.xib in Resources */,
